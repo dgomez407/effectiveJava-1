@@ -2,7 +2,7 @@ package weakHashMap;
 
 import java.util.*;
 
-public class Main {
+public class WeakHashMapMain {
 	public static void main(String[] args) throws InterruptedException {
         // -- Fill a weak hash map with one entry
         //WeakHashMap<Data, String> map = new WeakHashMap<Data, String>();
@@ -11,7 +11,7 @@ public class Main {
         Data someDataObject = new Data("foo");
         //map.put(someDataObject, someDataObject.value);
         map.put("data", someDataObject);
-        map.clear();
+       // map.clear();
         //System.out.println("map contains someDataObject ? " + map.containsKey(someDataObject));
 
         // -- now make someDataObject elligible for garbage collection...
